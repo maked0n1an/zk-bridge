@@ -65,7 +65,7 @@ def get_module():
         "Select a method to get started",
         choices=[
             Choice(
-                "1) Mint Polyhedra 2024 NFT on one or some chains configured in settings",
+                "1) Mint 'Polyhedra 2024 NFT' on one or some chains configured in settings",
                 mint_polyhedra_2024_nft
             ),
             Choice("2) Exit", "exit"),
