@@ -107,8 +107,8 @@ async def run_module(module, wallet):
 def measure_time_for_all_work(start_time: float):
     end_time = round(time.time() - start_time, 2)
     seconds = round(end_time % 60, 2)
-    minutes = round(end_time / 60, 1) if end_time > 60 else 0
-    hours = end_time / 3600 if end_time > 3600 else 0
+    minutes = int(end_time // 60) if end_time > 60 else 0
+    hours = int(end_time // 3600) if end_time > 3600 else 0
 
     logger.log(
         20, 

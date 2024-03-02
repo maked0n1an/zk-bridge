@@ -4,6 +4,8 @@ import os
 import sys
 from pathlib import Path
 
+from min_library.models.others.constants import LogStatus
+
 
 class CustomLogger:
     FOLDER_NAME: str = 'logs'
@@ -65,8 +67,7 @@ class CustomLogger:
                 CustomLogDataAndRecord(log_format_dict['log_format'])
             )
 
-            logging.addLevelName(26, "SUCCESS")
-            logging.addLevelName(28, "MINTED")
+            logging.addLevelName(28, LogStatus.MINTED)
 
             self.LOGGERS["main_logger"] = main_logger
 

@@ -60,6 +60,13 @@ class ZkBridge:
             tx = await self.client.contract.transaction.sign_and_send(
                 tx_params=tx_params
             )
+            
+            self.client.account_manager.custom_logger.log_message(
+                level=LogStatus.INFO,
+                message=(
+                    f'Waiting for Tx receipt'
+                )
+            )
 
             receipt = await tx.wait_for_tx_receipt(
                 web3=self.client.account_manager.w3
