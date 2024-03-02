@@ -1,6 +1,6 @@
 <h1 align="center">zkBridge AIO<h1>
 
-The README in Russian can be found here: [README.md](https://github.com/maked0n1an/zk-bridge/blob/main/README.md).
+The README in Russian can be found here: [README.md](https://github.com/maked0n1an/zk-bridge/blob/master/README.md).
 
 ## 🔗 Links
 🔔 Channel: [M A K E D 0 N 1 A N](https://t.me/crypto_maked0n1an)
