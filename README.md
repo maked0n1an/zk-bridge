@@ -9,6 +9,7 @@ The README in English can be found here: [README_en.md](https://github.com/maked
 
 <h2>Описание</h2>
 Бот создан для взаимодействия с zkBridge.
+
 Сейчас доступно:
 - минт «Polyhedra 2024» NFT;
 - бридж токенов через мост (в разработке)

@@ -9,6 +9,7 @@ The README in Russian can be found here: [README.md](https://github.com/maked0n1
 
 <h2>Description</h2>
 The bot has been created to pass activities using zkBridge. 
+
 Now available:
 - mint 'Polyhedra 2024' NFT;
 - bridge tokens via bridge (in developing)
