@@ -18,7 +18,9 @@ IS_SHUFFLE_WALLETS = True
 # - with 33% chance of executing, so set it like:
 #   ['bsc', 'None', None],
 # - mixing another networks:
-#   [None, 'bsc', 'arbitrum'],    
+#   [None, 'bsc', 'arbitrum'],
+# - maybe such option:
+#   ['bsc', 'op_bnb', 'arbitrum', 'optimism', 'polygon', None],
 # You can comment or uncomment the row you need. 
 # If you want to mint ONLY in one network (for example, 'bsc')
 # with guaranteed mint, please set it like:
@@ -39,7 +41,7 @@ MINT_NETWORKS: List[List[Optional[str]]] = [
     ['bsc', None],
     ['op_bnb', ],
     ['arbitrum', 'optimism', None],
-    ['polygon', ]
+    # ['polygon', ]
 ]
 
 IS_SLEEP = True
