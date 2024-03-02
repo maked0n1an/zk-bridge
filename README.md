@@ -21,6 +21,7 @@ The README in English can be found here: [README_en.md](https://github.com/maked
 <pre><code>$ pip install -r requirements.txt</code></pre>
 * Заходим в папку zk-bridge:
 <pre><code>cd zk-bridge</code></pre>
+* Прочти 'settings/settings.py' внимательно и сделай настройку.
 * Запускаем в терминале:
 <pre><code>python main.py</code></pre>
 

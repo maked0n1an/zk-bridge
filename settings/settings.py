@@ -10,12 +10,35 @@ IS_ACCOUNT_NAMES = True
 # Do you want to shuffle wallets?
 IS_SHUFFLE_WALLETS = True
 
+# If you want mint in selected network so set it in MINT_NETWORKS like:
+# - with 100% chance of executing:
+#   ['bsc',],
+# - with 50% chance of executing, so set it like:
+#   ['bsc', None],
+# - with 33% chance of executing, so set it like:
+#   ['bsc', 'None', None],
+# - mixing another networks:
+#   [None, 'bsc', 'arbitrum'],    
+# You can comment or uncomment the row you need. 
+# If you want to mint ONLY in one network (for example, 'bsc')
+# with guaranteed mint, please set it like:
+#
+# MINT_NETWORKS: List[List[Optional[str]]] = [
+#     # ['ethereum', None],
+#     ['bsc', ],
+#     #['op_bnb', ],
+#     #['arbitrum', None],
+#     #['optimism', None],
+#     #['polygon', ]
+# ]
+# Available networks:
+# 'ethereum' | 'bsc' | 'op_bnb' | 'arbitrum' | 'optimism' | 'polygon'
+
 MINT_NETWORKS: List[List[Optional[str]]] = [
     # ['ethereum', None],
     ['bsc', None],
     ['op_bnb', ],
-    ['arbitrum', None],
-    ['optimism', None],
+    ['arbitrum', 'optimism', None],
     ['polygon', ]
 ]
 
@@ -30,7 +53,8 @@ SLEEP_BETWEEN_ACCS_TO = 600  # secs
 MIN_AMOUNT = 1  # select between MIN_AMOUNT and MAX_AMOUNT
 MAX_AMOUNT = 5  # how much NFTs will be claimed on one account
 
-IS_CREATE_LOGS_FOR_EVERY_WALLET = True
+# Do you want to create log file for every wallet? Yes - True, No - False
+IS_CREATE_LOGS_FOR_EVERY_WALLET = False
 
-# How many retries will be executed if fail?
+# (not working now) How many retries will be executed if fail?
 RETRY_COUNT = 3

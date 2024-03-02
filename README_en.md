@@ -19,11 +19,12 @@ It will be supplemented in the future.
 ## Installation and launch
 If you don’t have knowledge about installing Python and running it, then go to the section [Links](#links):
 
-- Install libs:
+* Install libs:
 <pre><code>$ pip install -r requirements.txt</code></pre>
-- Go to 'zk-bridge' folder:
+* Go to 'zk-bridge' folder:
 <pre><code>cd zk-bridge</code></pre>
-- Launch in terminal:
+* Read 'settings/settings.py' carefully and set settings you need.
+* Launch in terminal:
 <pre><code>python main.py</code></pre>
 
 ## Donats (EVM):
