@@ -52,9 +52,6 @@ SLEEP_BETWEEN_MINT_ON_ONE_ACCOUNT_TO = 60  # secs
 SLEEP_BETWEEN_ACCS_FROM = 100  # secs
 SLEEP_BETWEEN_ACCS_TO = 600  # secs
 
-MIN_AMOUNT = 1  # select between MIN_AMOUNT and MAX_AMOUNT
-MAX_AMOUNT = 5  # how much NFTs will be claimed on one account
-
 # Do you want to create log file for every wallet? Yes - True, No - False
 IS_CREATE_LOGS_FOR_EVERY_WALLET = False
 
