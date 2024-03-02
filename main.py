@@ -113,7 +113,7 @@ def measure_time_for_all_work(start_time: float):
     logger.log(
         20, 
         (
-            f"The bot has ended it's work with work time: "
+            f"Spent time: "
             f"{hours} hours {minutes} minutes {seconds} seconds" 
         )
     )
@@ -150,3 +150,4 @@ if __name__ == '__main__':
     asyncio.run(main(module_data))
 
     measure_time_for_all_work(start_time)
+    end_of_work()
